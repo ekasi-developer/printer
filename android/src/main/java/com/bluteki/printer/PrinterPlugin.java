@@ -12,11 +12,11 @@ public class PrinterPlugin extends Plugin {
     private Printer implementation = new Printer();
 
     @PluginMethod
-    public void echo(PluginCall call) {
+    public void printer(PluginCall call) {
         String value = call.getString("value");
 
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("value", implementation.echo("Testing World"));
         call.resolve(ret);
     }
 }

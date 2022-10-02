@@ -11,9 +11,27 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`print(...)`](#print)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### print(...)
+
+```typescript
+print(options: { transaction: any; base64: string; }) => Promise<{ success: boolean; message: string; }>
+```
+
+| Param         | Type                                               |
+| ------------- | -------------------------------------------------- |
+| **`options`** | <code>{ transaction: any; base64: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ success: boolean; message: string; }&gt;</code>
+
+--------------------
+
 </docgen-api>

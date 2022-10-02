@@ -1,3 +1,3 @@
 export interface PrinterPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  print(options: { transaction: any, base64: string }): Promise<{ success: boolean, message: string }>;
 }

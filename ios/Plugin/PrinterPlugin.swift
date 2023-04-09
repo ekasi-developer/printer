@@ -5,8 +5,8 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(PrinterPlugin)
-public class PrinterPlugin: CAPPlugin {
+@objc(Printer)
+public class Printer: CAPPlugin {
     private let implementation = Printer()
 
     @objc func echo(_ call: CAPPluginCall) {

@@ -1,8 +1,8 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { PrinterPlugin } from './definitions';
+import { Printer as Interface } from './definitions';
 
-const Printer = registerPlugin<PrinterPlugin>('Printer', {
+const Printer = registerPlugin<Interface>('Printer', {
   web: () => import('./web').then(m => new m.PrinterWeb()),
 });
 

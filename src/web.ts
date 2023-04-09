@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { PrinterPlugin } from './definitions';
+import type { Printer, SuccessResponse, Transaction } from './definitions';
 
-export class PrinterWeb extends WebPlugin implements PrinterPlugin {
-  async print(options: { transaction: any, base64: string }): Promise<{ success: boolean, message: string }> {
+export class PrinterWeb extends WebPlugin implements Printer {
+  async print(options: Transaction): Promise<SuccessResponse> {
     console.log('ECHO', options);
-    return { success: true, message: 'Slip has been printed successfully.' };
+    return { message: 'Slip has been printed successfully.' };
   }
 }

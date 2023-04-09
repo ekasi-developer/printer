@@ -1,3 +1,11 @@
-export interface PrinterPlugin {
-  print(options: { transaction: any, base64: string }): Promise<{ success: boolean, message: string }>;
+export interface Transaction {
+  [key: string]: string;
+}
+
+export interface SuccessResponse {
+  message: string;
+}
+
+export interface Printer {
+  print(options: any): Promise<SuccessResponse>;
 }

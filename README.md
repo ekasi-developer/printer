@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`print(...)`](#print)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -23,15 +24,25 @@ npx cap sync
 ### print(...)
 
 ```typescript
-print(options: { transaction: any; base64: string; }) => Promise<{ success: boolean; message: string; }>
+print(options: any) => Promise<SuccessResponse>
 ```
 
-| Param         | Type                                               |
-| ------------- | -------------------------------------------------- |
-| **`options`** | <code>{ transaction: any; base64: string; }</code> |
+| Param         | Type             |
+| ------------- | ---------------- |
+| **`options`** | <code>any</code> |
 
-**Returns:** <code>Promise&lt;{ success: boolean; message: string; }&gt;</code>
+**Returns:** <code>Promise&lt;<a href="#successresponse">SuccessResponse</a>&gt;</code>
 
 --------------------
+
+
+### Interfaces
+
+
+#### SuccessResponse
+
+| Prop          | Type                |
+| ------------- | ------------------- |
+| **`message`** | <code>string</code> |
 
 </docgen-api>

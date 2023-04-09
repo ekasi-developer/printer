@@ -1,6 +1,6 @@
 {
-  "name": "printer",
-  "version": "0.0.1",
+  "name": "moz-pos-printer",
+  "version": "0.0.4",
   "description": "Printer for the MOZ POS android device.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluteki/printer.git"
+    "url": "git+https://github.com/ekasi-developer/printer.git"
   },
   "bugs": {
-    "url": "https://github.com/bluteki/printer/issues"
+    "url": "hhttps://github.com/ekasi-developer/printer/issues"
   },
   "keywords": [
     "capacitor",
@@ -37,7 +37,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api PrinterPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api Printer --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
